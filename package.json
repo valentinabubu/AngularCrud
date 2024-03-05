@@ -6,8 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:AngularCrud": "node dist/angular-crud/server/server.mjs"
+    "server": "ng test",
+    "serve:ssr:AngularCrud": "node dist/angular-crud/server/server.mjs",
+    "data":"json-server --watch ./src/app/data/db.json --port 3001"
   },
   "private": true,
   "dependencies": {
@@ -15,13 +16,17 @@
     "@angular/common": "^17.2.0",
     "@angular/compiler": "^17.2.0",
     "@angular/core": "^17.2.0",
-    "@angular/forms": "^17.2.0",
+    "@angular/forms": "^17.2.3",
     "@angular/platform-browser": "^17.2.0",
     "@angular/platform-browser-dynamic": "^17.2.0",
     "@angular/platform-server": "^17.2.0",
     "@angular/router": "^17.2.0",
     "@angular/ssr": "^17.2.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
     "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
